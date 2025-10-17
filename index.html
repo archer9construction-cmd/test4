@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- დაამატე ეს შენს <head> ან <body> ბოლოში -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("Wv3JGEtVs4ujS8MQ2"); // ჩასვი შენი User ID EmailJS-დან
+  })();
+</script>
+
+</head>
+<body>
+    <div class="backgroud">
+        <div class="main">
+            <div class="nav">
+                <h1>Archer 9 <br> Corporation</h1>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+
+                <button>Orders</button>
+            </div>
+
+            <div class="header">
+                <h1>Building, repairing, renovations</h1>
+                <p>We are a construction company specializing in house building, renovations, repairs, <br> maintenance, landscaping, interior design, and home improvement projects.</p>
+                <button>Contact Us</button>
+            </div>
+
+            <form id="contact-form" class="email-form">
+                <input type="text" name="message" placeholder="Enter your E-mail" required><br>
+                <input type="text" name="message" placeholder="Enter your Phone Number" required><br>
+                <input type="text" name="message" class="txt45" placeholder="Enter your text" required" style="height: 90px;"><br>
+                <button type="submit">Send</button>
+                </form>
+
+            <script>
+</script>
+
+
+</h1>
+        </div>
+    </div>
+
+    <div class="header2">
+        <center><div class="back1">
+            <div class="transparent-box">
+                <center><h1>Our Services</h1></center>
+            <br><br><br><br><br>
+            <center><p style="color: white;">
+We provide complete interior services – from construction to finishing touches.<br><br>
+
+<strong>Main Services:</strong><br>
+🏗 Construction & Interior Works – building and planning of rooms and houses, full renovation<br>
+🔨 Carpentry & Framing – woodwork and structural framing<br>
+🎨 Painting – professional wall finishing and decorative painting<br>
+🧱 Sheetrock & Tiling – drywall installation and tile works<br>
+🚰 Plumbing – installation and repair of water systems<br>
+⚡ Electric – safe and reliable electrical works<br>
+🛠 Demolition & Renovation – removing old structures and giving new life to your space<br><br>
+
+With us, your home or office becomes functional, durable, and aesthetically perfect.
+</p></center>
+
+        </div></center>
+            </div>
+    </div>
+
+    
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // არ დავარეფრეშოთ გვერდი
+
+    emailjs.sendForm('service_39sjq9p', 'template_yz06dbi', this)
+      .then(function() {
+        alert('წერილი გაიგზავნა წარმატებით!');
+      }, function(error) {
+        alert('შეცდომა მოხდა: ' + JSON.stringify(error));
+      });
+  });
+</script>
+
+    <div class="gallery-page" style="background: url(header2.jpg); background-size: cover; background-repeat: no-repeat;">
+        <div class="boxes-cont">
+            <div class="box" id="photo1"></div>
+            <div class="box" id="photo2"></div>
+            <div class="box" id="photo3"></div>
+            <div class="box" id="photo4"></div>
+            <div class="box" id="photo5"></div>
+            <div class="box" id="photo6"></div>
+            <div class="box" id="photo7"></div>
+        </div>
+    </div>
+
+</body>
+</html>

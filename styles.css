@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playwrite+HU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.backgroud {
+    width: 100%;
+    height: 100vh;
+    background: url(header2.jpg);
+    background-size: cover;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.nav h1 {
+    color: white;
+    cursor: pointer;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav button {
+    width: 150px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 3px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+.nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li a {
+    position: relative; /* So ::before positions relative to the link */
+}
+
+.nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0; /* stick to bottom of link */
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(0, 195, 255);
+    display: block;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav ul li a:hover::before {
+    width: 100%;
+}
+
+.header h1 {
+    color: rgb(255, 255, 255);
+}
+
+.header p {
+    color: rgb(209, 209, 209);
+    font-size: 13px;
+}
+
+.header {
+    margin-top: 10%;
+    margin-left: 7%;
+}
+
+.header button {
+    width: 150px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 3px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.contact-form {
+    width: 25%;
+    height: 60%;
+    position: absolute;
+    margin-left: 65%;
+    top: 0;
+    margin-top: 23vh;
+    border-radius: 2px;
+}
+
+.contact-form input {
+    width: 250px;
+    height: 35px;
+    border: 1px solid grey;
+    padding: 0 5px;
+    margin-left: 5px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.contact-form button {
+    margin-left: 5px;
+    width: 260px;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid rgb(77, 77, 77);
+    margin-top: 10px;
+}
+
+
+
+
+
+.header2 {
+    width: 100%;
+    height: 100vh;
+    background: url(p1.jpg);
+    background-size: cover;
+}
+
+.back1 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.658);
+}
+
+.back1 h1 {
+    color: white;
+    margin-left: 41%;
+    margin-top: 5%;
+    position: absolute;
+}
+
+.boxes {
+    width: 100%;
+    height: 50vh;
+    margin-top: 20%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(17, 17, 17);
+    border-radius: 3px;
+}
+
+.transparent-box {
+    width: 85%;
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 5vh;
+    border-radius: 3px;
+}
+
+#contact-form input {
+    width: 250px;
+    height: 30px;
+    padding: 2 15px;
+    margin: 3px;
+    text-indent: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+#contact-form button {
+    width: 247px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-left: 3px;
+}   
+
+#contact-form {
+    margin-left: 70%;
+    margin-top: -30vh;
+}
+
+.gallery-page {
+    width: 100%;
+    height: 100vh;
+}
+
+.boxes-cont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.836);
+}
+
+.box {
+    background-color: rgb(182, 182, 182);
+    width: 250px;
+    height: 190px;
+    padding: 5 10px ;
+    margin-left: 10px;
+    margin: 10px;
+    border-radius: 0;
+}
+
+#photo1 {
+    background: url(Gallery/IMG_0189.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#photo2 {
+    background: url(Gallery/IMG_2360.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#photo3 {
+    background: url(Gallery/IMG_1971.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#photo4 {
+    background: url(Gallery/IMG_2421.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#photo5 {
+    background: url(Gallery/IMG_2671.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#photo6 {
+    background: url(Gallery/IMG_0402.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#photo7 {
+    background: url(Gallery/IMG_0189.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
